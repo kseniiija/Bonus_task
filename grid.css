@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    width: 100%;
+    background-color: #edf2f8;
+    font-size: 13px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas:
+        'one one two three'
+        'four five five three';
+    grid-gap: 30px;
+    padding: 30px;
+}
+
+.container .box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.container .box .first-p {
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.container .box .second-p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.container .box .user {
+    display: flex;
+    align-items: center;
+}
+
+.container .box .user img {
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+}
+
+.container .box .user .name-and-status {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.container .box .user .name-and-status span:nth-child(1) {
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+
+.container .one {
+    grid-area: one;
+    background-color: #733fc8;
+    background-image: url(images/g210.png);
+    background-position: 80% 2%;
+    background-size: 30%;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: small;
+}
+
+.container .two {
+    grid-area: two;
+    background-color: #49556b;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: small;
+    color: white;
+}
+
+
+.container .three {
+    grid-area: three;
+    background-color: white;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: small;
+    color: grey;
+}
+
+.container .four {
+    grid-area: four;
+    background-color: white;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: small;
+    color: grey;
+}
+
+.container .five {
+    grid-area: five;
+    background-color: #18202d;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: small;
+    color: white;
+}
+
+.color-gray {
+    color: gray;
+}
+
+.color-gray2 {
+    color: gainsboro;
+    opacity: 50%;
+}
+
+.color-white {
+    color: white;
+}
+.color-black {
+    color: black;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.name-and-status {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.first-p {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
